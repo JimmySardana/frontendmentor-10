@@ -11,27 +11,49 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(0, 36%, 70%); }
   </style>
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+  <main>
+    <div class="container">
+      <header>
+        <img src="./images/logo.svg" alt="">
+      </header>
+      <div class="pic">
+        <img class="hero-mobile mobile" src="./images/hero-mobile.jpg" alt="woman">
+      </div>
+      <div class="infos">
+        <h1>We're</h1>
+        <h1>coming soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form novalidate>
+          <input id="mail" type="email" placeholder="Email Address" required>
+          <img class="error error-icon hide" src="./images/icon-error.svg" alt="">
+          <button type="submit"><img src="./images/icon-arrow.svg" alt="arrow"></button>
+          <div class="error message hide">Please provide a valid email</div>
+        </form>
+      </div>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/JimmySardana" target="_blank">Jimmy Sardana</a>.
+        </p>
+      </footer>
+    </div>
+    <div class="main-pic desktop">
+      <img class="hero-desktop" src="./images/hero-desktop.jpg" alt="">
+    </div>
+  </main>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>
